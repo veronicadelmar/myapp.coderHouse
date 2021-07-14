@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { ItemCount } from "../ItemlistContainer/ItemCount";
 import { Link } from "react-router-dom";
 import { useCart } from "../CartContext/CartContext";
+import { CartContext } from "../CartContext/CartContext";
 export const ItemDetail = ({product}) => {
+
+
     const [eventItem, setEventItem] = useState (0);
-    const { addItem, setAddItem} = useCart()
-   // const [valor, setValor]= useState(product.id, product.precio, producto.descr, )
-
-
+    const { addItem, SetAddItem} = useContext(CartContext)
+   
+   
     const onAddItem = (e) => {
         setEventItem(e)
-        console.log (e);
-        // const addItem = (desc, img,  quantity, precio, id, stock)
-        addItem(product.descr, product.img, e, product.precio, product.id, product.stock)
+        addItem(product.nombre, product.img, e, product.precio, product.id, product.stock)
         }
 
     return <div style={{  textAlign:'center', width: 'auto', margin:'1rem', padding:'20px', backgroundColor: '#f5c9f3', border:'5px solid #69c2cf', borderRadius:'10px' }}>

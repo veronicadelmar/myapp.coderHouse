@@ -1,9 +1,21 @@
-import React from 'react';
-import { CartProvider, } from "../CartContext/CartContext";
+import React, { useContext } from 'react';
+import { CartContext, CartProvider, } from "../CartContext/CartContext";
+import { useCart } from "../CartContext/CartContext";
 
-export const Cart = ({product}) => {
+export const Cart = () => {
+    const cartInfo = useCart()
+    const cartItems = cartInfo.cartInfo.items
     return (
-        <h1>hola</h1>
+        <ul>
+            {cartItems.map((mostrar, i) => (
+                
+                    <li key={i}>{`Item: ${mostrar.item.desc}, cantidad: ${mostrar.quantity}`}</li>
+                
+            ))
 
+            }
+    
+        </ul>
+        
     )
 }
