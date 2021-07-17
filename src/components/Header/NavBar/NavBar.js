@@ -10,8 +10,8 @@ export default function NavBar(){
 
        
         <Link to='/' >Inicio</Link>
-        <Link to='/category/Hombre'>Zapato de Hombre</Link>
-        <Link to='/category/Mujer'>Zapato de Mujer</Link>
+        <Link to='/category/hombre'>Zapato de Hombre</Link>
+        <Link to='/category/mujer'>Zapato de Mujer</Link>
 
         <CartWidget/>
     </nav>

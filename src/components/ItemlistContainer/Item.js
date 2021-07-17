@@ -8,6 +8,7 @@ export const Item = ({array}) => {
         <h4>{array.nombre}</h4>
         <img style={{ width: '196px', height: '196px' }} src={array.img} alt={array.name} />
         <h4>{`Stock: ${array.stock} unidades.`}</h4>
+
         <Link to={`/item/${array.id}`}> Ver Detalles</Link>
     </div>
     };
