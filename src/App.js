@@ -7,6 +7,7 @@ import './App.css';
 import { ItemListContainer } from './components/ItemlistContainer/ItemListContainer';
 import { CartProvider } from './components/CartContext/CartContext';
 import { Cart } from './components/Cart/Cart';
+import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra';
 function App() {
   return (
     
@@ -22,10 +23,13 @@ function App() {
                 <ItemListContainer />
               </Route> 
               <Route exact path="/item/:pId">
-              <ItemDetailContainer />
+                <ItemDetailContainer />
               </Route>
               <Route exact path="/cart">
-              <Cart />
+                <Cart />
+              </Route>
+              <Route exact path="/cart/finalizarCompra">
+                <FinalizarCompra />
               </Route>
             </Switch>
           </BrowserRouter>

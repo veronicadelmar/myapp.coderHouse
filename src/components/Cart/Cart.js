@@ -106,7 +106,7 @@ return cartInfo.totalPrice()
          <h3>Total del pedido</h3>
          <p>$ {totalPriceItems()}</p>
          </div>
-         <Link to="/">
+         <Link to="/cart/finalizarCompra">
          <button>Realizar pedido</button>
          </Link>
          
