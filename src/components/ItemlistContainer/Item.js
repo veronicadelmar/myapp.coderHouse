@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { ItemCount } from "./ItemCount";
+import React from "react";
 import './Item.css';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export const Item = ({array}) => {
     
     return <div className='item'>

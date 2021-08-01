@@ -2,7 +2,6 @@ import React, { useEffect, useState, useContext } from "react";
 import { ItemCount } from "../ItemlistContainer/ItemCount";
 import { Link } from "react-router-dom";
 import '../ItemlistContainer/Item.css';
-import { useCart } from "../CartContext/CartContext";
 import { CartContext } from "../CartContext/CartContext";
 export const ItemDetail = ({product}) => {
 

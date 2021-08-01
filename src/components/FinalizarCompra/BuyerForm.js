@@ -48,15 +48,7 @@ const BuyerForm = (itemProduct) => {
 
     })
 
-        //Actualizar stock
-  //  const docRef = db.collection('items').doc("1")
-   // docRef.update({
-   //     stock: 40
-  //  })
-
-    //const actualizarStock = docRef.update({
-    //   stock: stock - 
-   // })
+  
      }
      
     return (

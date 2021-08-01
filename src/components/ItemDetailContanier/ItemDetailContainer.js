@@ -66,4 +66,3 @@ return(
   
 )
 }
-//export default ItemDetailContainer;
