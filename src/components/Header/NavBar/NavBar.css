@@ -1,0 +1,18 @@
+button{
+    background-color: E6E1E4;
+    border: none;
+    border-radius: 5px;
+    color: #FB0498;
+    font-weight: bolder;
+    padding: 8px;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 8em;
+    margin: 20px;
+}
+
+button:hover{
+    background-color:#FB0498;
+    color: black;
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Item.css';
 
 export const ItemCount = ({cantidad, id, precio, descripcion, value,  onAdd}) => {
 
@@ -25,10 +26,10 @@ export const ItemCount = ({cantidad, id, precio, descripcion, value,  onAdd}) =>
     return <>
         <h4>{`Su pedido: ${quantity} unidad(es).`}</h4>
         { quantity < cantidad ?(
-            <button style={{backgroundColor:'yellow', padding:'10px', borderRadius:'5px', border:'none', margin:'10px' }} onClick={e => agregarUno()}>  +  </button>
+            <button className='botonmas' onClick={e => agregarUno()}>  +  </button>
         ) : (<h5> Se ha alcanzado el Stock</h5>)}
         { quantity > 0?(
-            <button style={{backgroundColor:'red',border:'none', borderRadius:'5px', padding:'10px', margin:'10px' }} onClick={e => quitarUno()}>  -  </button>
+            <button className='botonmenos' onClick={e => quitarUno()}>  -  </button>
         ) : (<h5>Por favor ingrese un valor a su compra</h5>)}
         <button onClick={handleClick} value={quantity}>Agregar al carrito</button> 
         

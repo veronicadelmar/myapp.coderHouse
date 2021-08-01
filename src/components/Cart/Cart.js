@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext, CartProvider, } from "../CartContext/CartContext";
 import { useCart } from "../CartContext/CartContext";
 import { Link } from 'react-router-dom';
+import './Cart.css';
 
 export const Cart = ({props}) => {
 
@@ -19,26 +20,11 @@ return cartInfo.totalPrice()
 }
 
 
-//item={i.item}
-//quantity={i.quantity}
-//key={i.item.id}
-
-
-//const price = item.price
-  //  const totalPriceProduct =  price * quantity; 
-    //const {removeItems} = useCart()
-    
-
-   // const remover =(item)=>{
-     //   removeItems(item)
-       // }
-
-
 
 
     return(
         <> 
-        <div>
+        <div className="container-cart">
             
             {cartInfo.cartInfo.items.length === 0? (
             <h1>No hay productos agregados</h1>
@@ -46,9 +32,9 @@ return cartInfo.totalPrice()
             <>
             
             <h1>Carrito de compras</h1>
+            <div className="container-contenidoCarrito">
             <div>
-            <div>
-            <div>
+            <div className="cart-info">
                 <h2>Producto</h2>
                 <h2>Artículo</h2>
                 <h2>Precio</h2>
@@ -78,7 +64,7 @@ return cartInfo.totalPrice()
             )
   })} 
      
-     <div>
+     <div className="total-price">
      <h2><span> Total $ </span>{totalPriceItems()} </h2>
      </div>
      

@@ -11,7 +11,7 @@ import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra';
 function App() {
   return (
     
-    <main style={{padding:'0', margin:'10px' }} >
+    <main style={{padding:'0', margin:'0' }} >
       <CartProvider >
         <BrowserRouter>
           <Header />

@@ -1,11 +1,12 @@
 import React from 'react';
-import FotoDePerfil from './../../imagenes/uniswap-uni-logo.png';
+import Logo from './../../imagenes/logo-vg.png';
 import NavBar from './NavBar/NavBar';
+import './Header.css';
 
 export default function SimpleHeader(){
     return (
-        <header style={{padding:'1rem', display:'flex', justifyContent: 'space-between', marginBottom:'5rem', borderBottom:'5px solid red' }} >
-          <img style={{ height: 'auto', width: '13vh' }} src={FotoDePerfil} alt="logo" />
+        <header>
+          <img style={{ height: 'auto', width: '13vh' }} src={Logo} alt="logo" />
           <NavBar />
         </header>
     );

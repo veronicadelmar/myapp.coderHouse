@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { ItemCount } from "../ItemlistContainer/ItemCount";
 import { Link } from "react-router-dom";
+import '../ItemlistContainer/Item.css';
 import { useCart } from "../CartContext/CartContext";
 import { CartContext } from "../CartContext/CartContext";
 export const ItemDetail = ({product}) => {
@@ -15,7 +16,7 @@ export const ItemDetail = ({product}) => {
         addItem(product.nombre, product.img, e, product.precio, product.id, product.stock)
         }
 
-    return <div style={{  textAlign:'center', width: 'auto', margin:'1rem', padding:'20px', backgroundColor: '#f5c9f3', border:'5px solid #69c2cf', borderRadius:'10px' }}>
+    return <div className='item'>
 
         <h2>{product.nombre}</h2>
         <h4>{`Precio: ${product.precio} ARS`}</h4>

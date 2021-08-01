@@ -1,32 +1,31 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import FolderIcon from '@material-ui/icons/Folder';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import Facebook from './../../imagenes/facebook.svg';
+import Instagram from './../../imagenes/instagram.svg';
+import Whatsapp from './../../imagenes/whatsapp.svg';
 
-const useStyles = makeStyles({
-  root: {
-    width: 500,
-  },
-});
+
 
 export default function LabelBottomNavigation() {
-  const classes = useStyles();
-  const [value, setValue] = React.useState('recents');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+  
   return (
-    <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-      <BottomNavigationAction label="Recents" value="recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" value="favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" value="nearby" icon={<LocationOnIcon />} />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
-    </BottomNavigation>
+
+    
+    <div style={{display:'flex', justifyContent:'center'}}>
+
+      <h6>copyright Verónica Guiñan</h6>
+      
+      <a target="_blank"  href='https://www.facebook.com/Verolicious25/'>
+        <img style={{with:'50px', height:'50px'}} src={Facebook} alt="facebook"/>
+      </a>
+
+      <a target="_blank" href='https://www.instagram.com/veronicadelmar25/'>
+        <img style={{with:'50px', height:'50px'}} src={Instagram} alt="facebook"/>
+      </a>
+
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=541124002381">
+        <img style={{with:'50px', height:'50px'}} src={Whatsapp} alt="facebook"/>
+      </a>
+
+    </div>
   );
 }

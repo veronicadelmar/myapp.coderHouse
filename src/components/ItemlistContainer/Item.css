@@ -1,0 +1,40 @@
+h4{
+    padding: 10px;
+    background-color: #E3DAE3;
+}
+
+.botonmas{
+    width: 5rem;
+    background-color: yellow;
+    color: black;
+}
+
+.botonmenos{
+    width: 5rem;
+    background-color: red;
+    color: black;
+}
+
+.item{
+    margin:1rem;
+    padding:20px; 
+    border: 3px solid #FB0498; 
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.detalle{
+    text-decoration: none;
+    font-size: medium;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.detalle:hover{
+    background-color: blue;
+}
